@@ -9,18 +9,10 @@
 </head>
 <body>
     <div class="ui inverted fixed menu">
-        <div class="header item"> Exercices</div>
+        <div class="header item"> Exercices 2</div>
     </div>
     <div class="ui main container" id="app">
-        <input type="checkbox" v-model="cls" :true-value="'success'" :false-value="'error'">
-        <a v-bind:href="link" :title="title"></a> <!--v-bind peut-être raccourci par ":"-->
-        <ul>
-            <li v-for='person in persons'>{{person}}</li>
-        </ul>
-        <div class="ui message" :class="cls"> <!-- v-if "supprime" l'élément tandis que v-show le masque avec un display none.-->
-            <i class="close icon" v-on:click="close"></i>  <!-- v-on est un écouteur d'évenement , @click est le raccourci de v-on:click -->             
-            <p>{{message}}</p>
-        </div>
+        {{seconds}}
     </div>
 
 
