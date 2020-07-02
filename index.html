@@ -12,8 +12,20 @@
         <div class="header item"> Exercices 2</div>
     </div>
     <div class="ui main container" id="app">
-        {{seconds}}
+        <input type="checkbox" v-model="success">
+        <input type="text" v-model="message">
+        {{message}}
+       <div class="ui message" :class="cls">
+           Hello
+       </div>
+       Prénom: {{firstname}} <br>
+       Nom: {{lastname}} <br>
+       Nom Complet: <input type="text" v-model="fullname">
+
+
+       <button v-bind:class= "{red,green}" v-on:click="testColor()">coucou</button>
     </div>
+    
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
